@@ -10,15 +10,15 @@ React와 TypeScript를 이용하여 간단한 CRUD 기능을 가진 To-Do 리스
 ## 🔹 기능
 
 - 할 일 추가
-- 할 일 수정 (Save / Cancel)
+- 할 일 수정
 - 할 일 삭제
-- 할 일 완료 체크 (체크 시 글자에 취소선 적용)
+- 할 일 완료 체크
 
 ---
 
 ## 💻 기술 스택
 
-- React (Functional Component, Hooks)
+- React
 - TypeScript
 - CSS
 
