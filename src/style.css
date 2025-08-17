@@ -1,4 +1,95 @@
-* {
+/* 전체 배경 & 폰트 */
+body {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  background: #f8f8fa;
+  color: #2d2d2d;
   margin: 0;
+  padding: 2rem;
+}
+
+/* 제목 */
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6d28d9;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* 입력창 영역 */
+form {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid #6d28d9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #5b21b6;
+}
+
+/* 버튼 */
+button {
+  padding: 0.6rem 1rem;
+  background: #6d28d9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #5b21b6;
+}
+
+/* 할 일 목록 */
+ul {
+  list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 8px;
+}
+
+li button {
+  flex-shrink: 0;
+  min-width: 70px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+input[type="checkbox"] {
+  accent-color: #6d28d9;
+  transform: scale(1.2);
+}
+
+/* 완료된 항목 */
+li span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+li span[style*="line-through"] {
+  color: #9ca3af;
 }

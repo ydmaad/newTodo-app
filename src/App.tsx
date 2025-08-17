@@ -70,6 +70,7 @@ const App = () => {
 
   return (
     <>
+      <h1 className="app-title">My Todo List</h1>
       <form onSubmit={handleAdd}>
         <input
           type="text"
